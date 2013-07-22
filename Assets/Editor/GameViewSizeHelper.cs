@@ -103,7 +103,7 @@ public class GameViewSizeHelper
 				object group = GetGroup (groupType, instance);
 				int totalCount = GetTotalCount (group);
 				int gameViewSizeLength = GetCustomCount (group);
-				int index = 0;
+				int index = -1;
 				for (int i = totalCount - gameViewSizeLength; i < totalCount; i++) {
 						object other_gameViewSize = GetGameViewSize (group, i);
 						if (GameViewSize_Equals (_gameViewSize, other_gameViewSize)) {
@@ -111,7 +111,7 @@ public class GameViewSizeHelper
 								break;
 						}
 				}
-				if (index != 0) {
+				if (index != -1) {
 						PropertyInfo selectedSizeIndex = Types.GetType ("UnityEditor.GameView", assemblyName).GetProperty ("selectedSizeIndex", BindingFlags.Instance | BindingFlags.NonPublic);
 						selectedSizeIndex.SetValue (gameView, index, null);
 				}

@@ -12,8 +12,8 @@ namespace Kyusyukeigo.Helper
 
         public enum GameViewSizeType
         {
-            AspectRatio,
-            FixedResolution
+            FixedResolution,
+            AspectRatio
         }
 
         #endregion public enum

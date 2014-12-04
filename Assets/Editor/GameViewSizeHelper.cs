@@ -165,7 +165,7 @@ public class GameViewSizeHelper
 		static object instance {
 				get {
 						if (m_instance == null) {
-								PropertyInfo propertyInfo_gameViewSizes = gameViewSizes.GetProperty ("instance", BindingFlags.NonPublic | BindingFlags.Static);
+								PropertyInfo propertyInfo_gameViewSizes = gameViewSizes.GetProperty ("instance");
 								m_instance = propertyInfo_gameViewSizes.GetValue (null, new object[0]);
 						}
 						return m_instance;

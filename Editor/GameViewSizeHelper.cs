@@ -104,6 +104,7 @@ namespace Kyusyukeigo.Helper
 
         public static void ChangeGameViewSize(GameViewSizeGroupType groupType, GameViewSize gameViewSize)
         {
+            _gameViewSize = gameViewSize;
             EditorWindow gameView = EditorWindow.GetWindow(Types.gameView);
             PropertyInfo currentSizeGroupType = Types.gameView.GetProperty("currentSizeGroupType", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Static);
             GameViewSizeGroupType currentType = (GameViewSizeGroupType)currentSizeGroupType.GetValue(gameView, null);

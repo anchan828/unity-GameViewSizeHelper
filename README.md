@@ -52,3 +52,7 @@ public static bool Contains (GameViewSizeGroupType groupType, GameViewSizeType t
 public static void ChangeGameViewSize (GameViewSizeGroupType groupType, GameViewSize gameViewSize)
 public static void ChangeGameViewSize (GameViewSizeGroupType groupType, GameViewSizeType type, int width, int height, string baseText)
 ```
+
+## LICENSE
+
+[MIT](https://github.com/anchan828/unity-GameViewSizeHelper/blob/master/LICENSE)
